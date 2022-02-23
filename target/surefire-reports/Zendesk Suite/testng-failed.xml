@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Zendesk Suite]" verbose="0">
+  <parameter name="ScreenshotPath" value="src\\main\\resources\\Screenshots\\EEPPortal"/>
+  <parameter name="InputFilePath" value="src\\main\\resources\\Excel_Data\\EEP_Portal.xlsx"/>
+  <parameter name="Browser" value="Chrome"/>
+  <test parallel="none" name="EEP Test(failed)">
+    <parameter name="ScreenshotPath" value="src\\main\\resources\\Screenshots\\EEPPortal"/>
+    <parameter name="InputFilePath" value="src\\main\\resources\\Excel_Data\\EEP_Portal.xlsx"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="ZendeskAutomationMain.EEPPortal_InitialTest">
+        <methods>
+          <include name="Verify_Home_Page" invocation-numbers="0"/>
+          <include name="driverInitiation"/>
+        </methods>
+      </class> <!-- ZendeskAutomationMain.EEPPortal_InitialTest -->
+    </classes>
+  </test> <!-- EEP Test(failed) -->
+</suite> <!-- Failed suite [Zendesk Suite] -->
