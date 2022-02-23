@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Zendesk Suite" verbose="5">
+  <test name="EEP Test">
+  	<parameter name="InputFilePath" value="src\\main\\resources\\Excel_Data\\EEP_Portal.xlsx"/>
+  	<parameter name="ScreenshotPath" value="src\\main\\resources\\Screenshots\\EEPPortal"/>
+	<parameter name="Browser" value="Chrome"/>
+	<classes>
+      <class name="ZendeskAutomationMain.EEPPortal_InitialTest">
+  	 </class>  
+ 	</classes>
+  </test> <!-- SGRE Test -->
+</suite> <!-- SGRE Suite -->
