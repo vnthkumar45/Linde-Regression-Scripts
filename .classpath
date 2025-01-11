@@ -9,19 +9,21 @@
 	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
 		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
@@ -34,5 +36,34 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="lib/spire.doc.free-5.2.0 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/ATUReporter_Selenium_testNG-5.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/ATUTestRecorder-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/htmlunit-driver-2.42.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/htmlunit-driver-2.42.0-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/jdbi3-guava-3.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/jsoup-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/mongodb-driver-core-5.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/monte-screen-recorder-0.7.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/selenium-server-2.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/selenium-server-4.0.0-alpha-2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/selenium-shutterbug-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/spire.doc.free-5.2.0 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/testng-6.9.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/webdrivermanager-5.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/webdrivermanager-5.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/xmlbeans-5.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/java-stream-utils-3.0.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

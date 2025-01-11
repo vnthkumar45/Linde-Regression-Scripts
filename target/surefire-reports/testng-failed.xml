@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Zendesk Suite]" verbose="0">
-  <parameter name="ScreenshotPath" value="src\\main\\resources\\Screenshots\\EEPPortal"/>
-  <parameter name="InputFilePath" value="src\\main\\resources\\Excel_Data\\EEP_Portal.xlsx"/>
-  <parameter name="Browser" value="Chrome"/>
-  <test parallel="none" name="EEP Test(failed)">
-    <parameter name="ScreenshotPath" value="src\\main\\resources\\Screenshots\\EEPPortal"/>
-    <parameter name="InputFilePath" value="src\\main\\resources\\Excel_Data\\EEP_Portal.xlsx"/>
-    <parameter name="Browser" value="Chrome"/>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
       <class name="ZendeskAutomationMain.EEPPortal_InitialTest">
         <methods>
-          <include name="Verify_Home_Page" invocation-numbers="0"/>
+          <include name="CLOSE"/>
           <include name="driverInitiation"/>
+          <include name="Second_Employer_Eform_Verification"/>
         </methods>
       </class> <!-- ZendeskAutomationMain.EEPPortal_InitialTest -->
     </classes>
-  </test> <!-- EEP Test(failed) -->
-</suite> <!-- Failed suite [Zendesk Suite] -->
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
