@@ -1,146 +1,229 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>Linde_EEP_Project</groupId>
-  <artifactId>Linde_EEP_Project</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>Linde EEP Automation</name>
-  <description>Linde EEP Automation</description>
-   <url>http://maven.apache.org</url>
-   
-   <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Linde_EEP_Project</groupId>
+	<artifactId>Linde_EEP_Project</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Linde EEP Automation</name>
+	<description>Linde EEP Automation</description>
+	<url>http://maven.apache.org</url>
+
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-	
-	<build>
-	<plugins>
-	<plugin>
-	<groupId>org.apache.maven.plugins</groupId>
-	<artifactId>maven-surefire-plugin</artifactId>
-	<version>2.19.1</version>
-	<configuration>
-	<suiteXmlFiles>
-		<suiteXmlFile>src/test/resources/1.EEP_Portal_testng.xml</suiteXmlFile>
-		
-	</suiteXmlFiles>
-	</configuration>
-	</plugin>     
-	</plugins>
-</build>
 
-  <dependencies>
-   <dependency>
-  <groupId>org.testng</groupId>
-  <artifactId>testng</artifactId>
-  <version>6.8</version>
- </dependency>
- <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>3.8.1</version>
- </dependency>
- <dependency>
-    <groupId>ru.yandex.qatools.ashot</groupId>
-    <artifactId>ashot</artifactId>
-    <version>1.5.4</version>
-</dependency>
-<dependency>
-   <groupId>org.json</groupId>
-   <artifactId>org.json</artifactId>
-   <version>chargebee-1.0</version>
-</dependency>
-<dependency>
-    <groupId>com.github.javafaker</groupId>
-    <artifactId>javafaker</artifactId>
-    <version>0.12</version>
-</dependency>
+	<profiles>
+		<profile>
+			<id>Regression</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.18</version>
+						<configuration>
+							<suiteXmlFiles>
+								<suiteXmlFile>
+									src/test/resources/1.EEP_Portal_testng.xml</suiteXmlFile>>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
-<dependency>
-	<groupId>com.vimalselvam</groupId>
-	<artifactId>cucumber-extentsreport</artifactId>
-	<version>3.1.0</version>
-</dependency>
-<dependency>
-	<groupId>com.aventstack</groupId>
-	<artifactId>extentreports</artifactId>
-	<version>3.1.1</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/junit/junit -->
-<dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.4</version>
-</dependency>
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-server</artifactId>
-    <version>3.7.1</version>
-</dependency>
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi</artifactId>
-    <version>3.17</version>
-</dependency>
-<dependency>
-     <groupId>screen-shotter</groupId>
-         <artifactId>screen-shotter</artifactId>
-         <version>1.0</version>
-         <systemPath>${basedir}//src//main//resources//screen-shotter.jar</systemPath>
-         <scope>system</scope>
-</dependency>
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml</artifactId>
-    <version>3.17</version>
-</dependency>
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml-schemas</artifactId>
-    <version>3.17</version>
-</dependency>
-<dependency>
-    <groupId>log4j</groupId>
-    <artifactId>log4j</artifactId>
-    <version>1.2.16</version>
-</dependency>
-<dependency>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven.resolver</groupId>
+			<artifactId>maven-resolver-api</artifactId>
+			<version>2.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.8.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>ru.yandex.qatools.ashot</groupId>
+			<artifactId>ashot</artifactId>
+			<version>1.5.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>org.json</artifactId>
+			<version>chargebee-1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>0.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.vimalselvam</groupId>
+			<artifactId>cucumber-extentsreport</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>screen-shotter</groupId>
+			<artifactId>screen-shotter</artifactId>
+			<version>1.0</version>
+			<systemPath>
+				C:\Users\v.dhatchinamoorthy\eclipse-workspace\Load_DynamicContent_and_Variants\src\main\resources\screen-shotter.jar</systemPath>
+			<scope>system</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.13.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>5.1.1</version>
+		</dependency>
+		<!-- Thanks for using https://jar-download.com -->
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
-			<version>2.13.0</version>
+			<version>2.17.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 			<version>2.13.0</version>
 		</dependency>
-<!-- https://mvnrepository.com/artifact/org.openqa.selenium.core/selenium-core -->
-<dependency>
-    <groupId>org.openqa.selenium.core</groupId>
-    <artifactId>selenium-core</artifactId>
-    <version>1.0-20080914.225453</version>
-</dependency>
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>3.141.0</version>
-</dependency>
-<dependency>
-    <groupId>com.codepine.api</groupId>
-    <artifactId>testrail-api-java-client</artifactId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <groupId>com.googlecode.json-simple</groupId>
-    <artifactId>json-simple</artifactId>
-    <version>1.1.1</version>
-</dependency> 
-<dependency>
-  <groupId>org.json</groupId>
-  <artifactId>json</artifactId>
-  <version>20090211</version>
-</dependency>
-  </dependencies>
-   
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-to-slf4j</artifactId>
+			<version>2.17.2</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.openqa.selenium.core/selenium-core -->
+		<dependency>
+			<groupId>org.openqa.selenium.core</groupId>
+			<artifactId>selenium-core</artifactId>
+			<version>1.0-20080914.225453</version>
+		</dependency>
+		<dependency>
+			<groupId>com.codepine.api</groupId>
+			<artifactId>testrail-api-java-client</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>javax.mail-api</artifactId>
+			<version>1.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.6.2</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.8.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/ru.sbtqa/webdrivermanager -->
+		<dependency>
+			<groupId>ru.sbtqa</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>2.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>31.0.1-jre</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.assertthat</groupId>
+			<artifactId>selenium-shutterbug</artifactId>
+			<version>1.6</version>
+		</dependency>
+		<!-- Thanks for using https://jar-download.com -->
+		<dependency>
+			<groupId>com.testautomationguru.pdfutil</groupId>
+			<artifactId>pdf-util</artifactId>
+			<version>0.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.14</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20210307</version>
+		</dependency>
+		<dependency>
+			<groupId>org.echocat.java-stream-utils</groupId>
+			<artifactId>java-stream-utils</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
+	</dependencies>
+
 </project>

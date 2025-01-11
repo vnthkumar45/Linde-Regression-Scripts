@@ -1,39 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[URL accessed]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to Home page successfully]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-02-22T14:28:26Z" name="Zendesk Suite" finished-at="2022-02-22T14:29:37Z" duration-ms="70505">
+  <suite started-at="2025-01-10T19:09:17 IST" name="Zendesk Suite" finished-at="2025-01-10T19:09:54 IST" duration-ms="37735">
     <groups>
     </groups>
-    <test started-at="2022-02-22T14:28:26Z" name="EEP Test" finished-at="2022-02-22T14:29:37Z" duration-ms="70505">
+    <test started-at="2025-01-10T19:09:17 IST" name="EEP Test" finished-at="2025-01-10T19:09:54 IST" duration-ms="37735">
       <class name="ZendeskAutomationMain.EEPPortal_InitialTest">
-        <test-method is-config="true" signature="driverInitiation(java.lang.String)[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@5a3bc7ed]" started-at="2022-02-22T19:58:26Z" name="driverInitiation" finished-at="2022-02-22T19:58:29Z" duration-ms="2345" status="PASS">
+        <test-method is-config="true" signature="driverInitiation(java.lang.String,java.lang.String)[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@3246fb96]" started-at="2025-01-10T19:09:17 IST" name="driverInitiation" finished-at="2025-01-10T19:09:27 IST" duration-ms="10316" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[Chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://myhr-lindeuat.zendesk.com]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitiation -->
-        <test-method signature="Verify_Home_Page(java.lang.String, java.lang.String)[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@5a3bc7ed]" started-at="2022-02-22T19:58:29Z" name="Verify_Home_Page" finished-at="2022-02-22T19:59:37Z" duration-ms="68146" status="PASS">
+        <test-method signature="Second_Employer_Eform_Verification(java.lang.String,java.lang.String,java.lang.String)[pri:18, instance:ZendeskAutomationMain.EEPPortal_InitialTest@3246fb96]" started-at="2025-01-10T19:09:27 IST" name="Second_Employer_Eform_Verification" finished-at="2025-01-10T19:09:54 IST" duration-ms="27174" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[src\\main\\resources\\Screenshots\\EEPPortal]]>
+                <![CDATA[https://myhr-lindeuat.zendesk.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[src\\main\\resources\\Excel_Data\\EEP_Portal.xlsx]]>
+                <![CDATA[src\\main\\resources\\Screenshots\\EEPPortal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[src\\main\\resources\\Excel_Data\\MyHR_Eforms_Main.xlsx]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[URL accessed]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to Home page successfully]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- Verify_Home_Page -->
+        </test-method> <!-- Second_Employer_Eform_Verification -->
+        <test-method is-config="true" signature="CLOSE()[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@3246fb96]" started-at="2025-01-10T19:09:54 IST" name="CLOSE" finished-at="2025-01-10T19:09:54 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CLOSE -->
       </class> <!-- ZendeskAutomationMain.EEPPortal_InitialTest -->
     </test> <!-- EEP Test -->
   </suite> <!-- Zendesk Suite -->

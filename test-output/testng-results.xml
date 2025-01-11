@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-10T08:08:04Z" name="Default suite" finished-at="2025-01-10T08:08:04Z" duration-ms="39">
+    <groups>
+    </groups>
+    <test started-at="2025-01-10T08:08:04Z" name="Default test" finished-at="2025-01-10T08:08:04Z" duration-ms="39">
+      <class name="ZendeskAutomationMain.EEPPortal_InitialTest">
+        <test-method is-config="true" signature="driverInitiation(java.lang.String, java.lang.String)[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@5ddf0d24]" started-at="2025-01-10T13:38:04Z" name="driverInitiation" finished-at="2025-01-10T13:38:04Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by @Configuration on method driverInitiation but has not been marked @Optional or defined
+in C:\Users\v.dhatchinamoorthy\AppData\Local\Temp\testng-eclipse-275193790\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by @Configuration on method driverInitiation but has not been marked @Optional or defined
+in C:\Users\v.dhatchinamoorthy\AppData\Local\Temp\testng-eclipse-275193790\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitiation -->
+        <test-method signature="Second_Employer_Eform_Verification(java.lang.String, java.lang.String, java.lang.String)[pri:18, instance:ZendeskAutomationMain.EEPPortal_InitialTest@5ddf0d24]" started-at="2025-01-10T13:38:04Z" name="Second_Employer_Eform_Verification" finished-at="2025-01-10T13:38:04Z" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method Second_Employer_Eform_Verification but has not been marked @Optional or defined
+in C:\Users\v.dhatchinamoorthy\AppData\Local\Temp\testng-eclipse-275193790\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method Second_Employer_Eform_Verification but has not been marked @Optional or defined
+in C:\Users\v.dhatchinamoorthy\AppData\Local\Temp\testng-eclipse-275193790\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Second_Employer_Eform_Verification -->
+        <test-method is-config="true" signature="CLOSE()[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@5ddf0d24]" started-at="2025-01-10T13:38:04Z" name="CLOSE" finished-at="2025-01-10T13:38:04Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CLOSE -->
+      </class> <!-- ZendeskAutomationMain.EEPPortal_InitialTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

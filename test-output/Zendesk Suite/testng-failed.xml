@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Zendesk Suite]" guice-stage="DEVELOPMENT" verbose="5">
+  <parameter name="AMSFilePath" value="src\\main\\resources\\Excel_Data\\AMS_Tickets_verification.xlsx"/>
+  <parameter name="EformPath" value="src\\main\\resources\\Excel_Data\\MyHR_Eforms_Main.xlsx"/>
+  <parameter name="ScreenshotPath" value="src\\main\\resources\\Screenshots\\EEPPortal"/>
+  <parameter name="Formsfilepath" value="src\\main\\resources\\Excel_Data\\Forms Categories.xlsx"/>
+  <parameter name="Appfilepath" value="src\\main\\resources\\Excel_Data\\MyApps_Verification.xlsx"/>
+  <parameter name="TriggerPath" value="src\\main\\resources\\Excel_Data\\Triggers.xlsx"/>
+  <parameter name="URL" value="https://myhr-lindeuat.zendesk.com"/>
+  <parameter name="KeywordFilePath" value="src\\main\\resources\\Excel_Data\\Keyword_based_Opscat_population.xlsx"/>
+  <parameter name="Browser" value="Edge"/>
+  <parameter name="InputFilePath" value="src\\main\\resources\\Excel_Data\\EEP_Portal.xlsx"/>
+  <test name="EEP Test">
+    <parameter name="AMSFilePath" value="src\\main\\resources\\Excel_Data\\AMS_Tickets_verification.xlsx"/>
+    <parameter name="EformPath" value="src\\main\\resources\\Excel_Data\\MyHR_Eforms_Main.xlsx"/>
+    <parameter name="ScreenshotPath" value="src\\main\\resources\\Screenshots\\EEPPortal"/>
+    <parameter name="Formsfilepath" value="src\\main\\resources\\Excel_Data\\Forms Categories.xlsx"/>
+    <parameter name="Appfilepath" value="src\\main\\resources\\Excel_Data\\MyApps_Verification.xlsx"/>
+    <parameter name="TriggerPath" value="src\\main\\resources\\Excel_Data\\Triggers.xlsx"/>
+    <parameter name="URL" value="https://myhr-lindeuat.zendesk.com"/>
+    <parameter name="KeywordFilePath" value="src\\main\\resources\\Excel_Data\\Keyword_based_Opscat_population.xlsx"/>
+    <parameter name="Browser" value="Edge"/>
+    <parameter name="InputFilePath" value="src\\main\\resources\\Excel_Data\\EEP_Portal.xlsx"/>
+    <classes>
+      <class name="ZendeskAutomationMain.EEPPortal_InitialTest"/>
+    </classes>
+  </test> <!-- EEP Test -->
+  <test parallel="none" name="EEP Test(failed)">
+    <parameter name="AMSFilePath" value="src\\main\\resources\\Excel_Data\\AMS_Tickets_verification.xlsx"/>
+    <parameter name="EformPath" value="src\\main\\resources\\Excel_Data\\MyHR_Eforms_Main.xlsx"/>
+    <parameter name="ScreenshotPath" value="src\\main\\resources\\Screenshots\\EEPPortal"/>
+    <parameter name="Formsfilepath" value="src\\main\\resources\\Excel_Data\\Forms Categories.xlsx"/>
+    <parameter name="Appfilepath" value="src\\main\\resources\\Excel_Data\\MyApps_Verification.xlsx"/>
+    <parameter name="TriggerPath" value="src\\main\\resources\\Excel_Data\\Triggers.xlsx"/>
+    <parameter name="URL" value="https://myhr-lindeuat.zendesk.com"/>
+    <parameter name="KeywordFilePath" value="src\\main\\resources\\Excel_Data\\Keyword_based_Opscat_population.xlsx"/>
+    <parameter name="Browser" value="Edge"/>
+    <parameter name="InputFilePath" value="src\\main\\resources\\Excel_Data\\EEP_Portal.xlsx"/>
+    <classes>
+      <class name="ZendeskAutomationMain.EEPPortal_InitialTest">
+        <methods>
+          <include name="Second_Employer_Eform_Verification"/>
+          <include name="driverInitiation"/>
+        </methods>
+      </class> <!-- ZendeskAutomationMain.EEPPortal_InitialTest -->
+    </classes>
+  </test> <!-- EEP Test(failed) -->
+</suite> <!-- Failed suite [Zendesk Suite] -->
