@@ -87,14 +87,6 @@
 			<version>3.7.1</version>
 		</dependency>
 		<dependency>
-			<groupId>screen-shotter</groupId>
-			<artifactId>screen-shotter</artifactId>
-			<version>1.0</version>
-			<systemPath>
-				C:\Users\v.dhatchinamoorthy\eclipse-workspace\Load_DynamicContent_and_Variants\src\main\resources\screen-shotter.jar</systemPath>
-			<scope>system</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>5.2.3</version>

@@ -26,7 +26,7 @@
     <property name="user.variant" value=""/>
     <property name="stderr.encoding" value="UTF-8"/>
     <property name="os.name" value="Windows 11"/>
-    <property name="classworlds.conf" value="C:\Users\v.dhatchinamoorthy\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf15520471848383042562.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\v.dhatchinamoorthy\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf10005200940936592356.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Bandizip\;C:\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Users\v.dhatchinamoorthy\AppData\Local\Launcher\app-1.0.326;C:\Users\v.dhatchinamoorthy\AppData\Local\Programs\Python\Launcher\;C:\Program Files\Java\jdk-22\bin;C:\Users\v.dhatchinamoorthy\AppData\Local\Programs\Python\Python313;C:\Users\v.dhatchinamoorthy\AppData\Local\Programs\Python\Python313\Scripts;."/>
@@ -58,7 +58,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="m2e.build.project.data.socket.port" value="58290"/>
+    <property name="m2e.build.project.data.socket.port" value="55590"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
 </testsuite>

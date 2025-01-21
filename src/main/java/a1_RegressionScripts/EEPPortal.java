@@ -30,7 +30,6 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import a3_Selenium_GenericMethods.PortalGenericMethods2;
-import screen.ScreenShotter;
 import testrail.APIException;
 import testrail.Testrail;
 
@@ -50,7 +49,6 @@ import testrail.Testrail;
 		public String Request_Number; //added by Hemant
 		public static String sheetName = null;
 		public static int errorcount = 0;
-		static ScreenShotter shot;	
 		static String CaseID;
 		static String Run = "R2076";
 		static String RunId = Run.substring(1, 5);
@@ -66,7 +64,6 @@ import testrail.Testrail;
 			//this.test = test;
 			//this.driverA = driverA1;
 			sheetName = sheet_name;
-			shot = new ScreenShotter(ScreenshotPath);
 			//LogSTATUS("Running function is " + sheet_name);
 			screenshotFilepath = ScreenshotPath;
 			     
