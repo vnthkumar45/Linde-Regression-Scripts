@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-21T10:49:44 IST" name="Zendesk Suite" finished-at="2025-01-21T10:49:57 IST" duration-ms="13080">
+  <suite started-at="2025-01-21T13:56:16 IST" name="Zendesk Suite" finished-at="2025-01-21T13:56:25 IST" duration-ms="8823">
     <groups>
     </groups>
-    <test started-at="2025-01-21T10:49:44 IST" name="EEP Test" finished-at="2025-01-21T10:49:57 IST" duration-ms="13080">
+    <test started-at="2025-01-21T13:56:16 IST" name="EEP Test" finished-at="2025-01-21T13:56:25 IST" duration-ms="8823">
       <class name="ZendeskAutomationMain.EEPPortal_InitialTest">
-        <test-method is-config="true" signature="driverInitiation(java.lang.String,java.lang.String)[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@3cc1435c]" started-at="2025-01-21T10:49:44 IST" name="driverInitiation" finished-at="2025-01-21T10:49:57 IST" duration-ms="13060" status="PASS">
+        <test-method is-config="true" signature="driverInitiation(java.lang.String,java.lang.String)[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@3cc1435c]" started-at="2025-01-21T13:56:16 IST" name="driverInitiation" finished-at="2025-01-21T13:56:25 IST" duration-ms="8804" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitiation -->
-        <test-method is-config="true" signature="CLOSE()[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@3cc1435c]" started-at="2025-01-21T10:49:57 IST" name="CLOSE" finished-at="2025-01-21T10:49:57 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="CLOSE()[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@3cc1435c]" started-at="2025-01-21T13:56:25 IST" name="CLOSE" finished-at="2025-01-21T13:56:25 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CLOSE -->
