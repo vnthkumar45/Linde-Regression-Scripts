@@ -1,2 +1,0 @@
-10-01-2025 19:09:31-INFO : URL accessed
-10-01-2025 19:09:49-INFO : Navigated to Home page successfully
