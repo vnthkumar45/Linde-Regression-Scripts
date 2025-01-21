@@ -1,0 +1,20 @@
+trigger:
+  branches:
+    include:
+      - master  # Sync only when changes are made to the main branch in the external repository
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  # Clone the source repository
+  - script: |
+      git clone https://github.com/vnthkumar45/Linde-Regression-Scripts.git source-repo
+    displayName: 'Clone source repository'
+
+  # Change directory to the cloned repo
+  - script: |
+      cd source-repo
+      git remote add azure https://dev.azure.com/TfO-DevOps-HRL-US/Linde%20PLC_182719_357774/_git/Linde-Regression-Scripts.git
+      git push azure --mirror
+    displayName: 'Push to Azure Repo'
