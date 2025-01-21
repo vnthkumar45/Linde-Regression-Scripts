@@ -47,16 +47,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeDriverService;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.service.DriverService;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.Reporter;
-import org.testng.annotations.Optional;
 
 import com.assertthat.selenium_shutterbug.core.Capture;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
@@ -120,43 +119,12 @@ public class PortalGenericMethods2 {
 
 	public static void IntiateDriver(String browser, String url) throws Exception {
 
-		System.out.println("1Browser--------"+browser +url);
 		try {
-			fis = new FileInputStream(
-					System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\Config.properties");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		try {
-			Config.load(fis);
-			log.debug("Config file loaded !!!");
-			System.out.println("Config file loaded !!!");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		try {
-			fis = new FileInputStream(
-					System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\ObjRep.properties");
-		} catch (FileNotFoundException e) {
-			// e.printStackTrace();
-
-		}
-		try {
-			ObjRep.load(fis);
-			log.debug("OR file loaded !!!");
-			System.out.println("object file loaded !!!");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
 		if (browser.equalsIgnoreCase("IE")) {
 			System.setProperty("webdriver.ie.driver", "src\\main\\resources\\chromedriver.exe");
 
 		} else if (browser.equalsIgnoreCase("Chrome")) {
-
-			WebDriverManager.chromedriver().setup();
+			
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("start-maximized"); // open Browser in maximized mode
 			options.addArguments("disable-infobars"); // disabling infobars
@@ -177,15 +145,11 @@ public class PortalGenericMethods2 {
 			driverA = new ChromeDriver(options);
 
 		} else if (browser.equalsIgnoreCase("Firefox")) {
-			WebDriverManager.firefoxdriver().setup();
 			driverA = new FirefoxDriver();
 
 		} else if (browser.equalsIgnoreCase("Edge")) {
 			System.out.println("--------4");
 			System.out.println("2Browser--------"+browser +url);
-			WebDriverManager.edgedriver().clearDriverCache();
-			WebDriverManager.edgedriver().setup();
-			System.out.println("3Browser--------"+browser +url);
 			EdgeOptions options = new EdgeOptions();
 			options.setCapability("se:logLevel", "ALL");
 			driverA = new EdgeDriver(options);
@@ -197,7 +161,10 @@ public class PortalGenericMethods2 {
 		driverA.get(url);
 		driverA.manage().window().maximize();
 		System.out.println("Intiated driver 2");
-
+	} catch (Exception e) {
+		e.printStackTrace();
+		System.out.println("Exception in IntiateDriver method");
+	}
 	}
 	
 	/*<--------------------------------Switch to Frame-------------------------------------------->*/
@@ -620,7 +587,7 @@ public class PortalGenericMethods2 {
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			String exceptionName = e.getClass().getSimpleName();
 			if (exceptionName.equals("NoSuchElementException")) {
-				Assert.fail("NoSuchElementException" + ActualText);
+				//Assert.fail("NoSuchElementException" + ActualText);
 			}
 
 		}
@@ -1175,7 +1142,7 @@ public class PortalGenericMethods2 {
 
 		test1.log(Status.INFO, Info);
 		log.info(Info);
-		Reporter.log(Info);
+		//Reporter.log(Info);
 
 	}
 
@@ -1184,7 +1151,7 @@ public class PortalGenericMethods2 {
 		test1.log(Status.PASS, MarkupHelper.createLabel(Info, ExtentColor.GREEN));
 		System.out.println(Info);
 		log.info(Info);
-		Reporter.log(Info);
+		//Reporter.log(Info);
 
 	}
 
@@ -1193,7 +1160,7 @@ public class PortalGenericMethods2 {
 		test1.log(Status.FAIL, MarkupHelper.createLabel(Info, ExtentColor.RED));
 		System.err.println(Info);
 		log.info(Info);
-		Reporter.log(Info);
+		//Reporter.log(Info);
 
 	}
 

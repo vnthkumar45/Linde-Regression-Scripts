@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[URL accessed]]>
-    </line>
-    <line>
-      <![CDATA[Navigated to Home page successfully]]>
-    </line>
   </reporter-output>
-  <suite started-at="2025-01-10T19:09:17 IST" name="Zendesk Suite" finished-at="2025-01-10T19:09:54 IST" duration-ms="37735">
+  <suite started-at="2025-01-21T10:49:44 IST" name="Zendesk Suite" finished-at="2025-01-21T10:49:57 IST" duration-ms="13080">
     <groups>
     </groups>
-    <test started-at="2025-01-10T19:09:17 IST" name="EEP Test" finished-at="2025-01-10T19:09:54 IST" duration-ms="37735">
+    <test started-at="2025-01-21T10:49:44 IST" name="EEP Test" finished-at="2025-01-21T10:49:57 IST" duration-ms="13080">
       <class name="ZendeskAutomationMain.EEPPortal_InitialTest">
-        <test-method is-config="true" signature="driverInitiation(java.lang.String,java.lang.String)[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@3246fb96]" started-at="2025-01-10T19:09:17 IST" name="driverInitiation" finished-at="2025-01-10T19:09:27 IST" duration-ms="10316" status="PASS">
+        <test-method is-config="true" signature="driverInitiation(java.lang.String,java.lang.String)[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@3cc1435c]" started-at="2025-01-21T10:49:44 IST" name="driverInitiation" finished-at="2025-01-21T10:49:57 IST" duration-ms="13060" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Edge]]>
               </value>
             </param>
             <param index="1">
@@ -29,34 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitiation -->
-        <test-method signature="Second_Employer_Eform_Verification(java.lang.String,java.lang.String,java.lang.String)[pri:18, instance:ZendeskAutomationMain.EEPPortal_InitialTest@3246fb96]" started-at="2025-01-10T19:09:27 IST" name="Second_Employer_Eform_Verification" finished-at="2025-01-10T19:09:54 IST" duration-ms="27174" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://myhr-lindeuat.zendesk.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[src\\main\\resources\\Screenshots\\EEPPortal]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[src\\main\\resources\\Excel_Data\\MyHR_Eforms_Main.xlsx]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[URL accessed]]>
-            </line>
-            <line>
-              <![CDATA[Navigated to Home page successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Second_Employer_Eform_Verification -->
-        <test-method is-config="true" signature="CLOSE()[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@3246fb96]" started-at="2025-01-10T19:09:54 IST" name="CLOSE" finished-at="2025-01-10T19:09:54 IST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="CLOSE()[pri:0, instance:ZendeskAutomationMain.EEPPortal_InitialTest@3cc1435c]" started-at="2025-01-21T10:49:57 IST" name="CLOSE" finished-at="2025-01-21T10:49:57 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CLOSE -->

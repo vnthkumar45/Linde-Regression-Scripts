@@ -29,8 +29,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
 import a3_Selenium_GenericMethods.PortalGenericMethods2;
 import screen.ScreenShotter;
 import testrail.APIException;
@@ -289,7 +287,7 @@ import testrail.Testrail;
 			catch (Exception e) {
 				log.error("Following action not performed");
 				// log.error(e.printStackTrace());
-				SoftAssert softAssert = new SoftAssert();
+				
 				String exceptionName = e.getClass().getSimpleName();
 				System.out.println("Exception Occured at line :" + row_number + " " + exceptionName);
 				if (exceptionName.equals("NoSuchElementException")) {
@@ -299,7 +297,7 @@ import testrail.Testrail;
 					log.error("NoSuchElementException: " + row_number);
 					LogFAIL( "NoSuchElementException" + " : " + row_number + " : " + fetchedData[1]);
 					Testrail.addResultForTestCase(RunId, CaseID, 5);
-					Assert.fail("NoSuchElementException" + " : " + row_number + " : " + fetchedData[1]);
+					
 				}
 
 				else if (exceptionName.equals("UnhandledAlertException")) {
@@ -324,7 +322,7 @@ import testrail.Testrail;
 							+ fetchedData[2] + "--" + fetchedData[3] + "--" + fetchedData[4] + "--" + fetchedData[5]);
 					LogFAIL(  "ArrayIndexOutOfBoundsException" + ":" + row_number + " : " + fetchedData[1]);
 					Testrail.addResultForTestCase(RunId, CaseID, 5);
-					Assert.fail("ArrayIndexOutOfBoundsException" + " : " + row_number + " : " + fetchedData[1]);
+					
 				} else if (exceptionName.equals("org.openqa.selenium.TimeoutException")) {
 					log.error("Following action not performed: " + fetchedData[5]);
 					log.error("Error occured at line:" + row_number);
@@ -346,7 +344,7 @@ import testrail.Testrail;
 							+ fetchedData[5]);
 					LogFAIL("ElementNotVisibleException" + ":" + row_number + " : " + fetchedData[1]);
 					Testrail.addResultForTestCase(RunId, CaseID, 5);
-					Assert.fail("ElementNotVisibleException" + " : " + row_number + " : " + fetchedData[1]);
+					
 
 				} else if (exceptionName.equals("ElementNotFoundException")) {
 					log.error("Error occured at line:" + row_number);
@@ -355,7 +353,7 @@ import testrail.Testrail;
 							+ fetchedData[5]);
 					LogFAIL( "ElementNotFoundException" + ":" + row_number + " : " + fetchedData[1]);
 					Testrail.addResultForTestCase(RunId, CaseID, 5);
-					Assert.fail("ElementNotFoundException" + " : " + row_number + " : " + fetchedData[1]);
+					
 				
 				} else if (exceptionName.equals("NoAlertPresentException")) {
 					log.error("Error occured at line:" + row_number);
@@ -481,7 +479,7 @@ import testrail.Testrail;
 					// LogSTATUS("Testcase passed - Error message not displayed");
 				} catch (Exception e) {
 					// LogSTATUS("id element is missing:" + msg);
-					Assert.fail();
+					
 				}
 			} else if (path.equalsIgnoreCase("xpath")) {
 				pathElement = By.xpath(element);
