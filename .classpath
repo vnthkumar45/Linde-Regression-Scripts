@@ -58,12 +58,12 @@
 	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/webdrivermanager-5.8.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/xmlbeans-5.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/eclipse-workspace/Linde_EEP_Project/lib/java-stream-utils-3.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/GitStuff/lib/testng-7.10.2.jar"/>
 	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/v.dhatchinamoorthy/GitStuff/lib/testng-7.10.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
