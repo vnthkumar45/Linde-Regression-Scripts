@@ -15,6 +15,10 @@ steps:
   # Change directory to the cloned repo
   - script: |
       cd source-repo
+<<<<<<< HEAD
       git remote add azure https://dev.azure.com/TfO-DevOps-HRL-US/Linde%20PLC_182719_357774/_git/Linde-Regression-Scripts.git
+=======
+      git remote add azure https://$(v.dhatchinamoorthy@accenture.com):$(Github to Azure clone Token PAT)@dev.azure.com/TfO-DevOps-HRL-US/Linde%20PLC_182719_357774/_git/Linde-Regression-Scripts.git
+>>>>>>> 5d4fb0b5817eeb6a7cf823b7b020183010457f60
       git push azure --mirror
     displayName: 'Push to Azure Repo'
